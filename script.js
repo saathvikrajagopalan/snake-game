@@ -76,7 +76,7 @@ function startGame() {
 
   gameStarted = true;
   overlayEl.classList.add('hidden');
-  loopInterval = setInterval(step, 220);
+  loopInterval = setInterval(step, 280);
   timerInterval = setInterval(() => {
     timeLeft -= 1;
     updateHud();
