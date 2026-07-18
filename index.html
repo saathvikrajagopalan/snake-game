@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Golden Snake</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <section class="hud">
+        <div class="hud-card">
+          <span class="label">Score</span>
+          <span id="score">0</span>
+        </div>
+        <div class="hud-card">
+          <span class="label">Time</span>
+          <span id="timer">03:00</span>
+        </div>
+      </section>
+
+      <section class="board-wrapper">
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <div id="overlay" class="overlay">Press any arrow key to start</div>
+      </section>
+
+      <section class="controls">
+        <button id="restartBtn" type="button">Restart</button>
+        <p class="hint">Eat cherries, apples, strawberries, and watermelons. Watermelon gives the highest points.</p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
